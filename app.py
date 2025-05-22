@@ -6,8 +6,11 @@ import plotly.express as px
 st.header(
     'Análisis de datos de anuncios de venta de coches en Estados Unidos')
 
-car_data = pd.read_csv(
-    'C:\\Users\\usuario\\Desktop\\tripleten_bootcamp_data_scientist\\sprint7-prueba\\proyecto\\proyecto_7_tt\\vehicles_us.csv')
+file_path = 'vehicles_us.csv'
+
+car_data = pd.read_csv(file_path)
+
+
 hist_button = st.button('Construir histograma')
 if hist_button:
     st.write(
